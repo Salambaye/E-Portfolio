@@ -44,7 +44,7 @@ const HeroSection = () => {
         <div className="space-y-8">
           <div className="text-lg md:text-xl font-mono text-indigo-400 mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20">
             <Sparkles className="h-4 w-4" />
-            Développeuse Full Stack
+            Développeuse Full Stack Junior
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white">
