@@ -117,5 +117,5 @@ MIT License - Libre d'utilisation
 **Salamata Nourou MBAYE**
 - Email: msalamatanourou@gmail.com
 - GitHub: [@Salambaye](https://github.com/Salambaye)
-- Portfolio: [mon-portfolio-2sfc.vercel.app](https://mon-portfolio-2sfc.vercel.app)
+<!-- - Portfolio: [mon-portfolio-2sfc.vercel.app](https://mon-portfolio-2sfc.vercel.app) -->
 
