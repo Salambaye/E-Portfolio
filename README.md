@@ -119,6 +119,3 @@ MIT License - Libre d'utilisation
 - GitHub: [@Salambaye](https://github.com/Salambaye)
 - Portfolio: [mon-portfolio-2sfc.vercel.app](https://mon-portfolio-2sfc.vercel.app)
 
----
-
-⭐ N'oubliez pas de mettre une étoile si vous aimez ce projet !
