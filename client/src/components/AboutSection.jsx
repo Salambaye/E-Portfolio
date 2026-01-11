@@ -1,4 +1,73 @@
-import { Code } from 'lucide-react';
+// import { Code } from 'lucide-react';
+
+// const AboutSection = () => {
+//   const skills = [
+//     { label: 'Développement Full Stack Junior', value: 95 },
+//     { label: 'Automatisation VBA/EDI', value: 90 },
+//     { label: 'API REST & Bases de données', value: 85 },
+//     { label: 'Méthodes Agiles', value: 80 }
+//   ];
+
+//   return (
+//     <section id="about" className="py-20 px-4 bg-slate-900">
+//       <div className="max-w-6xl mx-auto">
+//         <div className="text-center mb-16">
+//           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">À propos de moi</h2>
+//           <div className="h-1 w-20 bg-gradient-to-r from-indigo-500 to-blue-500 mx-auto rounded-full" />
+//         </div>
+        
+//         <div className="grid md:grid-cols-2 gap-12 items-center">
+//           <div className="space-y-6">
+//             <p className="text-gray-300 text-lg leading-relaxed">
+//               Diplômée d’un <span className="text-indigo-400 font-semibold">Master 2</span> en Développement Web et Mobile à l’ESTIAM, 
+//               je suis intéressée par les domaines du <span className="text-blue-400 font-semibold">développement full stack</span>, 
+//               de l’ <span className="text-blue-400 font-semibold">automatisation</span> et de la <span className="text-blue-400 font-semibold">data</span>. 
+              
+//             </p>
+//             <p className="text-gray-300 text-lg leading-relaxed">
+//               Curieuse, rigoureuse et autonome, j’aime analyser des problématiques concrètes et concevoir des solutions techniques fiables et efficaces.
+//               {/* Expérience dans l'automatisation de traitements de données, la conception de macros avancées et la gestion de flux EDI. 
+//               Compétences techniques solides en développement web et mobile avec un intérêt marqué pour l'analyse et l'optimisation de processus. */}
+//             </p>
+//             <div className="pt-4">
+//               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 font-medium">
+//                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+//                 Disponible en CDI dès maintenant
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-indigo-500/20 shadow-xl">
+//             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+//               <Code className="text-indigo-400" />
+//               Compétences clés
+//             </h3>
+//             <div className="space-y-4">
+//               {skills.map((skill) => (
+//                 <div key={skill.label}>
+//                   <div className="flex justify-between mb-2">
+//                     <span className="text-gray-300">{skill.label}</span>
+//                     <span className="text-indigo-400 font-semibold">{skill.value}%</span>
+//                   </div>
+//                   <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
+//                     <div 
+//                       className="h-full bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full transition-all duration-1000"
+//                       style={{ width: `${skill.value}%` }}
+//                     />
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default AboutSection;
+
+import { Code, Download } from 'lucide-react';
 
 const AboutSection = () => {
   const skills = [
@@ -19,18 +88,29 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Développeuse Web & Mobile avec un <span className="text-indigo-400 font-semibold">Master 2 – ESTIAM (2025)</span>. 
-              Actuellement en stage chez <span className="text-blue-400 font-semibold">ISTA (Massy)</span> en tant que Développeuse VBA / Fichiers EDI.
+            Diplômée d’un <span className="text-indigo-400 font-semibold">Master 2</span> en Développement Web et Mobile à l’ESTIAM, 
+            je suis intéressée par les domaines du <span className="text-blue-400 font-semibold">développement full stack</span>, 
+            de l’ <span className="text-blue-400 font-semibold">automatisation</span> et de la <span className="text-blue-400 font-semibold">data</span>. 
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Expérience dans l'automatisation de traitements de données, la conception de macros avancées et la gestion de flux EDI. 
-              Compétences techniques solides en développement web et mobile avec un intérêt marqué pour l'analyse et l'optimisation de processus.
+            Curieuse, rigoureuse et autonome, j’aime analyser des problématiques concrètes et concevoir des solutions techniques fiables et efficaces.
+            {/* Expérience dans l'automatisation de traitements de données, la conception de macros avancées et la gestion de flux EDI. 
+             Compétences techniques solides en développement web et mobile avec un intérêt marqué pour l'analyse et l'optimisation de processus. */}
             </p>
-            <div className="pt-4">
+
+            <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 font-medium">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 Disponible en CDI dès janvier 2026
               </div>
+              <a 
+                href="/CV_Salamata-Nourou_MBAYE.pdf"
+                download
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-medium transition-all shadow-lg hover:shadow-indigo-500/50"
+              >
+                <Download size={18} />
+                Télécharger mon CV
+              </a>
             </div>
           </div>
 
@@ -63,8 +143,6 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
-
 
 
 // import React, { useState, useEffect } from 'react';

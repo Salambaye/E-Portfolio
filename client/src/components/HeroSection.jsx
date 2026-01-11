@@ -1,4 +1,4 @@
-import { ArrowDown, MousePointerClick, Sparkles, Mail } from 'lucide-react';
+import { ArrowDown, MousePointerClick, Sparkles, Mail, Download } from 'lucide-react';
 
 const HeroSection = () => {
   const techStackLeft = ['React', 'Python', 'VBA', 'PHP', 'Angular'];
@@ -56,7 +56,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
-            Création d'<span className="text-indigo-400 font-medium">expériences digitales</span> qui allient design élégant et <span className="text-blue-400 font-medium">technologies de pointe</span> pour résoudre des problèmes concrets.
+            Créatrice d'<span className="text-indigo-400 font-medium">expériences digitales</span> qui allient design élégant et <span className="text-blue-400 font-medium">technologies de pointe</span> pour résoudre des problèmes concrets.
           </p>
 
           <div className="pt-8 flex flex-col sm:flex-row justify-center gap-6">
@@ -68,8 +68,19 @@ const HeroSection = () => {
             </a>
             
             <a 
-              href="#contact" 
+              href="/CV_Salamata-Nourou_MBAYE.pdf" 
+              download
               className="relative group overflow-hidden px-8 py-4 rounded-full font-medium text-lg border-2 border-indigo-400 text-indigo-400 hover:bg-indigo-500/10 transition-all"
+            >
+              <span className="relative z-10 flex items-center gap-2 justify-center">
+                <Download className="h-5 w-5" />
+                Télécharger mon CV
+              </span>
+            </a>
+
+            <a 
+              href="#contact" 
+              className="relative group overflow-hidden px-8 py-4 rounded-full font-medium text-lg border-2 border-blue-400 text-blue-400 hover:bg-blue-500/10 transition-all"
             >
               <span className="relative z-10 flex items-center gap-2 justify-center">
                 Contactez-moi 
@@ -118,8 +129,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
 
 
 

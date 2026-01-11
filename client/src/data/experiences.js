@@ -1,7 +1,7 @@
 export const experiences = [
   {
     title: 'Stagiaire en développement fichier EDI / VBA',
-    company: 'ISTA Massy',
+    company: 'ISTA - Massy, France',
     period: 'Mai 2025 - Décembre 2025',
     description: [
       'Développement de macros VBA sur Excel pour automatiser le traitement de fichiers',
@@ -14,7 +14,7 @@ export const experiences = [
   },
   {
     title: 'Stagiaire en développement web',
-    company: 'SIMEN Diamniadio',
+    company: 'SIMEN - Diamniadio, Sénégal',
     period: 'Mai 2022 - Août 2022',
     description: [
       'Conception d\'un système de gestion axé sur les résultats (SYSGAR)',
@@ -26,7 +26,7 @@ export const experiences = [
   },
   {
     title: 'Équipière Polyvalente',
-    company: 'Burger King Vélizy-Villacoublay',
+    company: 'Burger King - Vélizy-Villacoublay, France',
     period: 'Décembre 2022 - Juin 2025',
     description: [
       'Plus de 2 ans d\'expérience en service client',

@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-slate-950 text-gray-400 py-8 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <p className="mb-2">© 2026 Salamata Nourou MBAYE</p>
-        <p className="text-sm">Développeuse Full Stack | Disponible en CDI dès janvier 2026</p>
+        <p className="text-sm">Développeuse Full Stack Junior | Disponible en CDI dès maintenant </p>
       </div>
     </footer>
   );
