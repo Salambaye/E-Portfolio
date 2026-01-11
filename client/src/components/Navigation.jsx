@@ -1,5 +1,25 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useEffect } from "react";
+import {
+//   Home,
+//   User,
+//   Code,
+//   Briefcase,
+//   MessageSquare,
+//   Mail,
+//   BookOpen,
+  Sun,
+  Moon,
+//   Youtube,
+//   Volume2,
+//   VolumeX,
+//   Github,
+//   Linkedin,
+//   Globe,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,6 +80,36 @@ const Navigation = () => {
         </div>
       )}
     </nav>
+  );
+};
+
+const ThemeToggle = () => {
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark") {
+      document.documentElement.classList.add("dark");
+      setTheme("dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", newTheme);
+    setTheme(newTheme);
+  };
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800"
+      title="Toggle theme"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+    </button>
   );
 };
 

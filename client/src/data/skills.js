@@ -21,7 +21,8 @@ export const skills = {
     'GitHub',
     'MySQL',
     'API REST',
-    'Postman'
+    'Postman',
+    'Tailwind'
   ],
   'Outils & Méthodes': [
     'Méthode Agile',
